@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let i = 0;
+        function isPalindrome(s) {
+            if (s[i] !== s[s.length -i -1] ) {
+                i ++;
+                return false;
+            }
+            i ++;
+            return true;
+            isPalindrome(s);
+
+        }
+        alert(isPalindrome(prompt("Nhap 1 chuoi")))
+    </script>
+</body>
+</html>
